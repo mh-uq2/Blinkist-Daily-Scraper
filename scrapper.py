@@ -1,6 +1,7 @@
 # coding: utf-8
 from bs4 import BeautifulSoup
 from datetime import datetime
+import os
 import tomd
 import urllib3
 
@@ -27,3 +28,7 @@ output = tomd.convert(str(article).strip())
 date = datetime.now().strftime('%Y%m%d')
 with open(f'./books/{date}-{title}-{author}.md', "w") as text_file:
     text_file.write(output)
+
+os.system(f'git add "./books/{date}-{title}-{author}.md"')
+os.system(f'git commit -m "{title} by {author}"')
+os.system(f'git push')
