@@ -23,8 +23,9 @@ cta = container.find('div', 'dailyV2__free-book__cta').a['href']
 # Get actual content
 article = get_element_from_request(f'https://www.blinkist.com{cta}', 'article', 'shared__reader__blink reader__container__content')
 
-# Convert to markdown and dump to a file
-output = tomd.convert(str(article).strip())
+# Convert to markdown, add source and dump to a file
+output = f'{tomd.convert(str(article).strip())}\n\nSource: [{title} by {author}](https://www.blinkist.com{cta})'
+
 date = datetime.now().strftime('%Y%m%d')
 with open(f'./books/{date}-{title}-{author}.md', "w") as text_file:
     text_file.write(output)
