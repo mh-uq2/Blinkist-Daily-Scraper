@@ -207,4 +207,4 @@ We’d sure love to hear what you think about our content! Just drop an email to
 *The American Presidency *(2007) offers an introduction to the US presidency and the unique role each president must play in world politics. Find out what kind of thinking went into the creation of this job and how it has changed over the years. America’s Founding Fathers created a uniquely experimental government when they broke free from British influence; even today, their experiment continues to surprise us.
 
 
-Source: [The Gatekeepers by Chris Whipple](/en/nc/daily/reader/the-gatekeepers-en/)
+Source: [The Gatekeepers by Chris Whipple](https://www.blinkist.com/en/nc/daily/reader/the-gatekeepers-en/)
