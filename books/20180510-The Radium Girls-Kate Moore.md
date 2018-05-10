@@ -1,3 +1,8 @@
+#The Radium Girls
+*Kate Moore*
+
+>The Radium Girls (2016) tells the tragic yet ultimately inspiring story of American female workers in the early twentieth century who endured some of the worst corporate negligence imaginable. Their incredible fight for justice and responsibility continues to be a relevant story to this day.
+
 
 # What’s in it for me? Learn about one of the most tragic tales of corporate misconduct in American history.
 
