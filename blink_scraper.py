@@ -18,13 +18,14 @@ container = get_element_from_request('https://www.blinkist.com/nc/daily', 'div',
 
 title = container.find('div', 'dailyV2__free-book__title').string.strip()
 author = container.find('div', 'dailyV2__free-book__author').string.strip()
+description = container.find('div', 'dailyV2__free-book__description').string.strip()
 cta = container.find('div', 'dailyV2__free-book__cta').a['href']
 
 # Get actual content
 article = get_element_from_request(f'https://www.blinkist.com{cta}', 'article', 'shared__reader__blink reader__container__content')
 
 # Convert to markdown, add source and dump to a file
-output = f'{tomd.convert(str(article).strip())}\n\nSource: [{title} by {author}](https://www.blinkist.com{cta})'
+output = f'# {title}\n*{author}*\n\n>{description}\n\n{tomd.convert(str(article).strip())}\n\nSource: [{title} by {author}](https://www.blinkist.com{cta})'
 
 date = datetime.now().strftime('%Y%m%d')
 with open(f'./books/{date}-{title}-{author}.md', "w") as text_file:
