@@ -1,3 +1,4 @@
+![How Luck Happens](https://images.blinkist.com/images/books/5a9d8657b238e100079a3abf/1_1/470.jpg)
 # How Luck Happens
 *Janis Kaplan and Barnaby Marsh*
 
